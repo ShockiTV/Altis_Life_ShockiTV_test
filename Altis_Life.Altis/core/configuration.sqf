@@ -24,7 +24,7 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
-life_respawn_timer = 0; //Scaled in minutes
+life_respawn_timer = 5; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
@@ -340,7 +340,9 @@ life_garage_prices =
 	["C_Boat_Civil_01_police_F",3500],
 	["B_Boat_Armed_01_minigun_F",16500],
 	["B_SDV_01_F",25000],
-	["B_MRAP_01_F",7500]
+	["B_MRAP_01_F",7500],
+	["B_Heli_Transport_01_F",20000],
+	["I_MRAP_03_F",15000]
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 
@@ -369,6 +371,8 @@ life_garage_sell =
 	["C_Boat_Civil_01_police_F",4950],
 	["B_Boat_Armed_01_minigun_F",21000],
 	["B_SDV_01_F",45000],
-	["B_MRAP_01_F",10000]
+	["B_MRAP_01_F",10000],
+	["B_Heli_Transport_01_F",90000],
+	["I_MRAP_03_F",65000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);

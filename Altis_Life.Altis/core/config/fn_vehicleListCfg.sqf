@@ -94,6 +94,11 @@ switch (_shop) do
 			_return pushBack
 			["B_MRAP_01_F",30000];
 		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_return pushBack
+			["I_MRAP_03_F",150000];
+		};
 	};
 	
 	case "civ_air":
@@ -125,7 +130,7 @@ switch (_shop) do
 			_return pushBack
 			["B_Heli_Transport_01_F",200000];
 			_return pushBack
-			["B_MRAP_01_hmg_F",750000];
+			["B_G_Offroad_01_armed_F",750000];
 		};
 	};
 	

@@ -25,6 +25,7 @@ switch (_vehicle) do
 			case 6: {_color = "Black"};
 			case 7: {_color = "Black"};
 			case 8: {_color = "Taxi"};
+			case 9: {_color = "Medic"};
 		};
 	};
 	
@@ -170,6 +171,14 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Orange"};
 			case 1: {_color = "Black"};
+		};
+	};
+
+	case "I_MRAP_03_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Cop"};
 		};
 	};
 	
