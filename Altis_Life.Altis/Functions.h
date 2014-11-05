@@ -299,6 +299,9 @@ class Life_Client_Core
 		class fedCamDisplay {};
 		class copLoadout {};
 		class ticketPaid {};
+		class seizeObjects {};                  // custom to seize objects while restrained
+		class seizePlayerWeapon {};            // seize player weapon while restrained
+		class seizePlayerWeaponAction {};     // seize player weapon while restrained Action
 	};
 	
 	class Gangs
