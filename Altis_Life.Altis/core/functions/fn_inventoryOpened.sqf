@@ -10,7 +10,7 @@ _unit = _this select 0;
 _container = _this select 1;
 
 _isPack = getNumber(configFile >> "CfgVehicles" >> (typeOf _container) >> "isBackpack");
-if(_isPack == 1) then {
+if((_isPack == 1) && playerSide != west) then {
 	hint localize "STR_MISC_Backpack";
 	[] spawn {
 		waitUntil {!isNull (findDisplay 602)};
@@ -30,7 +30,7 @@ if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith {
 };
 
 if(_container isKindOf "LandVehicle" OR _container isKindOf "Ship" OR _container isKindOf "Air") exitWith {
-	if(!(_container in life_vehicles) && {(locked _container) == 2}) exitWith {
+	if(!(_container in life_vehicles) && {(locked _container) == 2} && playerSide != west) exitWith {
 		hint localize "STR_MISC_VehInventory";
 		[] spawn {
 			waitUntil {!isNull (findDisplay 602)};
