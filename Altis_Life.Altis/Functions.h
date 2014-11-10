@@ -255,6 +255,7 @@ class Life_Client_Core
 		class removeLicenses {};
 		class demoChargeTimer {};
 		class civLoadout {};
+		class gangMarkers{};
 	};
 	
 	class Vehicle
