@@ -69,7 +69,6 @@ player createDiarySubject ["controls","Controls"];
 		]
 	];
 					
-	
 	player createDiaryRecord ["serverrules",
 		[
 			"Za co se banuje", 
@@ -84,10 +83,21 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+				
 	player createDiaryRecord ["serverrules",
 		[
-			"Pravomoce policie", 
+			"Pravidla pro resuscitaci", 
+				"
+				1. Oziven budes automaticky pouze pri nehode s vozidlem.<br/>
+				2. Pokud zavrazdis nejakou osobu a budes pote zastrelen, neni povinnosti osetrovatele te ozivit.<br/>
+				3. Pokud budes zastrelen pri vykradani Federalnich rezerv, nebudes oziven a jedinou volbou je Novy zivot<br/><br/>
+				"
+		]
+	];
+
+	player createDiaryRecord ["serverrules",
+		[
+			"Pravomoce policie a S.W.A.T.", 
 				"
 				Co je zde napsane, je treba dodrzovat, jinak ti hrozi kick/ban.<br/><br/>
 				
@@ -95,7 +105,8 @@ player createDiarySubject ["controls","Controls"];
 				2. Civilista muze byt zatcen za rozptylovani policisty.<br/>
 				3. Pokud civilista nebo rebel zabije bezduvodne policistu, je to brano jako RDM, pokud nejde o nejakou Roleplay akci. Precti si co je RDM.<br/>
 				4. Trvale pronasledovani, obtezovani, spamovani a vykradani policisty povede k zabanovani.<br/>
-				5. Za braneni policii ve vykonu sluzby hrozi vezeni. Pokud se to bude opakovat, znamena to ban.<br/><br/>
+				5. Za braneni policii ve vykonu sluzby hrozi vezeni. Pokud se to bude opakovat, znamena to ban.<br/>
+				6.Jednotka S.W.A.T. muze strilet v pripade ohrozeni zivota jakekoli osoby nebo pokud je v blizkosti osoba se strelnou zbrani a na upozorneni policejni jednotky se nevzda a nebo zacne strilet.<br/><br/>
 				"
 		]
 	];
@@ -169,7 +180,8 @@ player createDiarySubject ["controls","Controls"];
 				4. Pokud je nekdo zabit v krizove palbe, nejde o RDM.<br/>
 				5. Pokud nekoho zabijes v sebeobrane nebo obrane nekoho jineho, nejde o RDM.<br/>
 				6. Strilet po komkoli bezduvodne s umyslem ho zabit.<br/><br/>
-				
+				7. Pokud zacnes strilet prvni, muzes cekat ze po tobe zacne nekdo strilet.
+
 				Vsechny tyto pripady posuzuje Admin.<br/><br/>
 				"
 		]
@@ -454,7 +466,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 				1. Pouziti smrtici sily je povoleno pouze pri ochrane zivota sveho, policisty nebo civilisty a to jen v pripade, ze omraceni by nemelo ucinek.<br/>
 				2. Vybijeni zbrane strelbou do vzduchu neni povole ani pri vycvik. Pokud policista toto pravidla porusi, bude zabanovan.<br/>
-				3. Nedodrzeni postupu a spatneho pouziti zbrane, bude znamenat zabanovani.<br/><br/>
+				3. Nedodrzeni postupu a spatneho pouziti zbrane, bude znamenat zabanovani.<br/>
 				"
 		]
 	];
@@ -502,12 +514,12 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Nelegalni vozidla",
 				"
-				Kontrola nelegalnich vozidel je hlavne pouzivano pro zjisteni vlastnictvi nelegalnich zblani.<br/><br/>
+				Kontrola nelegalnich vozidel je hlavne pouzivano pro zjisteni vlastnictvi nelegalnich zbrani.<br/><br/>
 
 				1. Ifrit<br/>
 				2. Speedboat<br/>
-				3. Hunter<br/>
-				4. Police Offroad<br/>
+				3. Policejní vozidla<br/>
+				4. Motokara (urcena pouze na zavodni drahu)<br/><br/>
 				"
 		]
 	];
@@ -517,15 +529,17 @@ player createDiarySubject ["controls","Controls"];
 				"
 				Civilista nesmi vlastnit nelegalni zbran viz. drzeni nelegalni zbrane.<br/><br/>
 
-				1. MX Series<br/>
-				2. Katiba Series<br/>
-				3. TRG Series<br/>
-				4. Mk.20 Series<br/>
-				5. Mk.18 ABR<br/>
-				6. SDAR Rifle<br/>
-				7. Sting SMG<br/>
-				8. Silenced P07 (Taser)<br/>
-				9. Any explosives<br/><br/>
+				1. MX<br/>
+				2. Katiba<br/>
+				3. TRG<br/>
+				4. Mk.20<br/>
+				5. Rahim<br/>
+				6. Mk.18 ABR<br/>
+				7. SDAR<br/>
+				8. Sting SMG<br/>
+				9. P07 s tlumicem<br/>
+				10. Vzbusniny<br/>
+				11. Policejni vybaveni a obleceni<br/><br/>
 				"
 		]
 	];
@@ -534,11 +548,11 @@ player createDiarySubject ["controls","Controls"];
 			"Nelegalni veci",
 				"
 				Tyto veci jsou nezakonne:<br/><br/>
-				1. Turtle<br/>
+				1. Zelvy<br/>
 				2. Cocaine<br/>
 				3. Heroin<br/>
-				4. Cannabis<br/>
-				5. Marijuana<br/><br/>
+				4. Konopi<br/>
+				5. Marihuana<br/><br/>
 				"
 		]
 	];

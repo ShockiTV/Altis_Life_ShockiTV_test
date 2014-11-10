@@ -28,7 +28,7 @@ if(_cops < 2) exitWith{[[_vault,-1],"disableSerialization;",false,false] spawn l
 
 _rip = true;
 [[getPlayerUID _robber,name _robber,"212"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-_kassa = 10000 + round(random 10000);
+_kassa = 50000 + round(random 25000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);
@@ -48,7 +48,7 @@ if(_rip) then
 {
 while{true} do
 {
-sleep 3;
+sleep 4;
 _cP = _cP + 0.01;
 _progress progressSetPosition _cP;
 _pgText ctrlSetText format["Lupez probiha, zustante v okoli (10m) (%1%2)...",round(_cP * 100),"%"];
