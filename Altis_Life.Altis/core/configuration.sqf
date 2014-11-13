@@ -107,6 +107,8 @@ switch (playerSide) do
 life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F"];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 life_illegal_vehicles = ["O_MRAP_02_F"];  //custom illegal vehicle field
+life_illegal_weapons = ["arifle_sdar_F","hgun_P07_snds_F","arifle_MX_F","SMG_02_ACO_F","hgun_ACPC2_F","arifle_MXC_F","arifle_TRG20_F","arifle_Katiba_F","srifle_DMR_01_F"]; //custom illegal weapon field
+life_legal_weapons = ["hgun_Rook40_F","hgun_Pistol_heavy_02_F","hgun_ACPC2_F","hgun_PDW2000_F"];
 
 life_inv_items = 
 [
@@ -289,7 +291,7 @@ life_weapon_shop_array =
 	["Chemlight_green",50],
 	["Chemlight_red",50],
 	["hgun_Rook40_F",2000],
-	["arifle_Katiba_F",7500],
+	["arifle_Katiba_F",20000],
 	["30Rnd_556x45_Stanag",85],
 	["20Rnd_762x51_Mag",100],
 	["30Rnd_65x39_caseless_green",75],
@@ -307,11 +309,15 @@ life_weapon_shop_array =
 	["MineDetector",500],
 	["optic_Holosight",575],
 	["acc_pointer_IR",175],
-	["arifle_TRG20_F",2500],
+	["arifle_TRG20_F",17000],
 	["SMG_01_F",2000],
 	["arifle_Mk20C_F",4500],
 	["30Rnd_45ACP_Mag_SMG_01",60],
-	["30Rnd_9x21_Mag",30]
+	["30Rnd_9x21_Mag",30],
+	["srifle_DMR_01_F",25000],
+	["hgun_Pistol_heavy_02_F",3000],
+	["hgun_ACPC2_F",5000],
+	["hgun_PDW2000_F",7000]
 ];
 __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 
