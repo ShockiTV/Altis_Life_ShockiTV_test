@@ -63,14 +63,4 @@ switch(true) do
 		
 		if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 	};
-	
-	case (playerSide == east && _uniform == "U_C_WorkerCoveralls"):
-	{
-		if( (call life_adaclevel) > 0) then
-		{
-			player setObjectTextureGlobal  [0, "images\adac.jpg"];
-		};
-		
-		if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
-	};	
 };

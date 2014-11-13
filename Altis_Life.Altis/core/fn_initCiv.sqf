@@ -24,3 +24,5 @@ if(life_is_arrested) then
 	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 };
 player addRating 9999999;
+
+[[getPlayerUID player],"TON_fnc_loadBounties",false,false] spawn life_fnc_MP;

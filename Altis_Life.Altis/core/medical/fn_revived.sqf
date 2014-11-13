@@ -26,9 +26,10 @@ if(life_atmcash > (call life_revive_fee)) then {
 };
 
 //Retexturing of units clothing, vanilla files only retexture the EMS unit.
-switch(playerSide) do {
-	case independent: {[[player,0,"textures\medic_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;};
-};
+//switch(playerSide) do {
+//	case independent: {[[player,0,"textures\medic_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;};
+//};
+
 
 //Bring me back to life.
 player setDir _dir;
@@ -41,4 +42,8 @@ hideBody life_corpse;
 player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
+
+//update clothing instead of just default medic stuff
+[] spawn life_fnc_updateClothing;
+
 [] call life_fnc_hudUpdate; //Request update of hud.

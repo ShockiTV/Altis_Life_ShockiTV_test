@@ -105,6 +105,8 @@ class CfgFunctions
 			class cleanupRequest {};
 			class setObjVar {};
 			class keyManagement {};
+			class saveBounties {};
+			class loadBounties {};
 		};
 		
 		class Housing
