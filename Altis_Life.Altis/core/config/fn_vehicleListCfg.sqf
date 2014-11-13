@@ -24,7 +24,7 @@ switch (_shop) do
 	case "med_shop":
 	{
 		_return = [
-			["C_Offroad_01_F",10000],
+			["C_Offroad_01_F",7500],
 			["I_Truck_02_medical_F",25000],
 			["O_Truck_03_medical_F",45000],
 			["B_Truck_01_medical_F",60000]
@@ -33,8 +33,8 @@ switch (_shop) do
 	
 	case "med_air_hs": {
 		_return = [
-			["B_Heli_Light_01_F",50000],
-			["O_Heli_Light_02_unarmed_F",75000]
+			["B_Heli_Light_01_F",30000],
+			["O_Heli_Light_02_unarmed_F",45000]
 		];
 	};
 	
@@ -45,8 +45,9 @@ switch (_shop) do
 			["B_Quadbike_01_F",2500],
 			["C_Hatchback_01_F",9500],
 			["C_Offroad_01_F",12500],
-			["C_SUV_01_F",35000],
-			["C_Van_01_transport_F",40000]
+			["C_SUV_01_F",45000],
+			["C_Van_01_transport_F",40000],
+			["C_Hatchback_01_sport_F",3000000]
 		];
 	};
 	
@@ -55,13 +56,13 @@ switch (_shop) do
 		_return =
 		[
 			["C_Van_01_box_F",60000],
-			["I_Truck_02_transport_F",75000],
-			["I_Truck_02_covered_F",100000],
-			["B_Truck_01_transport_F",275000],
-			["O_Truck_03_transport_F",200000],
-			["O_Truck_03_covered_F",250000],
-			["B_Truck_01_box_F",350000],
-			["O_Truck_03_device_F",450000]
+			["I_Truck_02_transport_F",80000],
+			["I_Truck_02_covered_F",110000],
+			["B_Truck_01_transport_F",300000],
+			["O_Truck_03_transport_F",225000],
+			["O_Truck_03_covered_F",275000],
+			["B_Truck_01_box_F",375000],
+			["O_Truck_03_device_F",680000]
 		];	
 	};
 	
@@ -72,14 +73,14 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
-			["O_MRAP_02_F",150000],
-			["B_Heli_Light_01_F",325000]
+			["O_MRAP_02_F",675000],
+			["B_Heli_Light_01_F",360000]
 		];
 		
 		if(license_civ_rebel) then
 		{
 			_return pushBack
-			["B_G_Offroad_01_armed_F",750000];
+			["B_G_Offroad_01_armed_F",800000];
 		};
 	};
 	
@@ -94,10 +95,13 @@ switch (_shop) do
 			_return pushBack
 			["B_MRAP_01_F",30000];
 		};
+		
 		if(__GETC__(life_coplevel) > 4) then
 		{
 			_return pushBack
-			["I_MRAP_03_F",150000];
+			["I_MRAP_03_F",570000];
+			_return pushBack
+			["C_Hatchback_01_sport_F",1500000];
 		};
 	};
 	
@@ -105,8 +109,8 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",253000],
-			["O_Heli_Light_02_unarmed_F",750000]
+			["B_Heli_Light_01_F",280000],
+			["O_Heli_Light_02_unarmed_F",800000]
 		];
 	};
 	
@@ -130,7 +134,7 @@ switch (_shop) do
 			_return pushBack
 			["B_Heli_Transport_01_F",200000];
 			_return pushBack
-			["B_G_Offroad_01_armed_F",750000];
+			["B_MRAP_01_hmg_F",750000];
 		};
 	};
 	

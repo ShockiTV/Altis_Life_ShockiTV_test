@@ -26,6 +26,19 @@ switch (_vehicle) do
 			case 7: {_color = "Black"};
 			case 8: {_color = "Taxi"};
 			case 9: {_color = "Medic"};
+			case 10: {_color = "Baratheon"};
+			case 11: {_color = "Nightwatch"};
+			case 12: {_color = "Stark"};
+			case 13: {_color = "Lannister"};
+			case 14: {_color = "Targaryen"};
+			case 15: {_color = "Jon Snow"};
+			case 16: {_color = "Arryn"};
+			case 17: {_color = "Greyjoy"};
+			case 18: {_color = "Martell"};
+			case 19: {_color = "Tully"};
+			case 20: {_color = "Tyrell"};
+			case 21: {_color = "Ninja"};
+			case 22: {_color = "Ghostbusters"};
 		};
 	};
 	
@@ -55,6 +68,7 @@ switch (_vehicle) do
 			case 4: {_color = "Tan"};
 			case 5: {_color = "Green"};
 			case 6: {_color = "Cop"};
+			case 7: {_color = "Race"};
 		};
 	};
 	

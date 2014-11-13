@@ -5,7 +5,7 @@
 	Description:
 	Impounds the vehicle
 */
-private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP"];
+private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_price2","_className","_ind"];
 _vehicle = cursorTarget;
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
 if(player distance cursorTarget > 10) exitWith {};
@@ -55,14 +55,28 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 			case (_vehicle isKindOf "Air"): {_price = (call life_impound_air);};
 		};
 		
-		life_impound_inuse = true;
-		[[_vehicle,true,player],"TON_fnc_vehicleStore",false,false] spawn life_fnc_MP;
-		waitUntil {!life_impound_inuse};
-		hint format[localize "STR_NOTF_Impounded",_type,_price];
-		[[0,"STR_NOTF_HasImpounded",true,[profileName,(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-		life_atmcash = life_atmcash + _price;
-	}
-		else
+		
+		if (!((typeOf _vehicle) in life_illegal_vehicles)) then {
+			life_impound_inuse = true;
+			[[_vehicle,true,player],"TON_fnc_vehicleStore",false,false] spawn life_fnc_MP;
+			waitUntil {!life_impound_inuse};
+			hint format[localize "STR_NOTF_Impounded",_type,_price];
+			[[0,"STR_NOTF_HasImpounded",true,[profileName,(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+			life_atmcash = life_atmcash + _price;
+
+		} else {
+			_className = typeOf _vehicle;
+			_ind = [_className,(call life_garage_sell)] call TON_fnc_index;		
+			if(_ind == -1 ) exitWith {hint "Cannot find sell price for this illegal car!"};
+			_price = ((call life_garage_sell) select _ind) select 1;
+			_price2 = life_cash + _price;
+			life_action_inUse = true;
+			hint localize "STR_Shop_ChopShopSelling";
+			[[player,_vehicle,_price,_price2],"TON_fnc_chopShopSell",false,false] spawn life_fnc_MP;
+			waitUntil {!life_action_inUse};
+		};
+	
+	} else
 	{
 		hint localize "STR_NOTF_ImpoundingCancelled";
 	};

@@ -2,7 +2,6 @@
 /*
 	Master Life Configuration File
 	This file is to setup variables for the client, there are still other configuration files in the system
-
 *****************************
 ****** Backend Variables *****
 *****************************
@@ -88,17 +87,17 @@ switch (playerSide) do
 	case west: 
 	{
 		life_atmcash = 10000000; //Starting Bank Money
-		life_paycheck = 500; //Paycheck Amount
+		life_paycheck = 100000; //Paycheck Amount
 	};
 	case civilian: 
 	{
 		life_atmcash = 10000000; //Starting Bank Money
-		life_paycheck = 350; //Paycheck Amount
+		life_paycheck = 100000; //Paycheck Amount
 	};
 	
 	case independent: {
 		life_atmcash = 10000000;
-		life_paycheck = 450;
+		life_paycheck = 100000;
 	};
 };
 
@@ -107,6 +106,7 @@ switch (playerSide) do
 */
 life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F"];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
+life_illegal_vehicles = ["O_MRAP_02_F"];  //custom illegal vehicle field
 
 life_inv_items = 
 [
@@ -195,7 +195,7 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500]];
+life_illegal_items = [["heroinu",1850],["heroinp",3500],["cocaine",2500],["cocainep",4000],["marijuana",1950],["turtle",5000],["blastingcharge",10000],["boltcutter",500],["goldbar",95000]];
 
 
 /*
@@ -203,99 +203,99 @@ life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocai
 */
 sell_array = 
 [
-	["apple",50],
+	["apple",60],
 	["heroinu",1850],
 	["heroinp",3500],
-	["salema",45],
-	["ornate",40],
-	["mackerel",175],
-	["tuna",700],
-	["mullet",250],
-	["catshark",300],
-	["rabbit",65],
-	["oilp",3200],
-	["turtle",3000],
+	["salema",65],
+	["ornate",60],
+	["mackerel",200],
+	["tuna",750],
+	["mullet",275],
+	["catshark",330],
+	["rabbit",70],
+	["oilp",2800],
+	["turtle",5000],
 	["water",5],
 	["coffee",5],
 	["turtlesoup",1000],
 	["donuts",60],
-	["marijuana",1800],
+	["marijuana",1950],
 	["tbacon",25],
 	["lockpick",75],
 	["pickaxe",750],
 	["redgull",200],
-	["peach",55],
+	["peach",65],
 	["cocaine",2500],
 	["cocainep",4000],
-	["diamond",750],
-	["diamondc",2200],
-	["iron_r",1700],
-	["copper_r",1500],
-	["salt_r",1200],
-	["glass",1200],
+	["diamond",650],
+	["diamondc",1800],
+	["iron_r",1750],
+	["copper_r",1550],
+	["salt_r",1150],
+	["glass",1150],
 	["fuelF",500],
 	["spikeStrip",1200],
-	["cement",1200],
+	["cement",1500],
 	["goldbar",95000]
 ];
 __CONST__(sell_array,sell_array);
 
 buy_array = 
 [
-	["apple",65],
-	["rabbit",75],
-	["salema",55],
-	["ornate",50],
-	["mackerel",200],
+	["apple",70],
+	["rabbit",80],
+	["salema",70],
+	["ornate",65],
+	["mackerel",205],
 	["tuna",900],
 	["mullet",300],
 	["catshark",350],
-	["water",10],
-	["turtle",4000],
+	["water",20],
+	["turtle",5500],
 	["turtlesoup",2500],
-	["donuts",120],
-	["coffee",10],
-	["tbacon",75],
-	["lockpick",150],
+	["donuts",100],
+	["coffee",20],
+	["tbacon",85],
+	["lockpick",450],
 	["pickaxe",1200],
 	["redgull",1500],
 	["fuelF",850],
-	["peach",68],
+	["peach",75],
 	["spikeStrip",2500],
-	["blastingcharge",35000],
-	["boltcutter",7500],
+	["blastingcharge",50000],
+	["boltcutter",10000],
 	["defusekit",2500],
-	["storagesmall",75000],
-	["storagebig",150000]
+	["storagesmall",150000],
+	["storagebig",300000]
 ];
 __CONST__(buy_array,buy_array);
 
 life_weapon_shop_array =
 [
-	["arifle_sdar_F",7500],
-	["hgun_P07_snds_F",650],
-	["hgun_P07_F",1500],
+	["arifle_sdar_F",10000],
+	["hgun_P07_snds_F",850],
+	["hgun_P07_F",2000],
 	["ItemGPS",45],
 	["ToolKit",75],
-	["FirstAidKit",65],
+	["FirstAidKit",75],
 	["Medikit",450],
-	["NVGoggles",980],
-	["16Rnd_9x21_Mag",15],
-	["20Rnd_556x45_UW_mag",35],
+	["NVGoggles",1000],
+	["16Rnd_9x21_Mag",30],
+	["20Rnd_556x45_UW_mag",45],
 	["ItemMap",35],
 	["ItemCompass",25],
 	["Chemlight_blue",50],
 	["Chemlight_yellow",50],
 	["Chemlight_green",50],
 	["Chemlight_red",50],
-	["hgun_Rook40_F",500],
-	["arifle_Katiba_F",5000],
-	["30Rnd_556x45_Stanag",65],
-	["20Rnd_762x51_Mag",85],
-	["30Rnd_65x39_caseless_green",50],
-	["DemoCharge_Remote_Mag",7500],
+	["hgun_Rook40_F",2000],
+	["arifle_Katiba_F",7500],
+	["30Rnd_556x45_Stanag",85],
+	["20Rnd_762x51_Mag",100],
+	["30Rnd_65x39_caseless_green",75],
+	["DemoCharge_Remote_Mag",10000],
 	["SLAMDirectionalMine_Wire_Mag",2575],
-	["optic_ACO_grn",250],
+	["optic_ACO_grn",550],
 	["acc_flashlight",100],
 	["srifle_EBR_F",15000],
 	["arifle_TRG21_F",3500],
@@ -305,10 +305,10 @@ life_weapon_shop_array =
 	["arifle_MXC_F",5000],
 	["arifle_MXM_F",8500],
 	["MineDetector",500],
-	["optic_Holosight",275],
+	["optic_Holosight",575],
 	["acc_pointer_IR",175],
 	["arifle_TRG20_F",2500],
-	["SMG_01_F",1500],
+	["SMG_01_F",2000],
 	["arifle_Mk20C_F",4500],
 	["30Rnd_45ACP_Mag_SMG_01",60],
 	["30Rnd_9x21_Mag",30]
@@ -321,26 +321,30 @@ life_garage_prices =
 	["C_Hatchback_01_F",1500],
 	["C_Offroad_01_F", 2500],
 	["B_G_Offroad_01_F",3500],
-	["C_SUV_01_F",5250],
+	["C_SUV_01_F",6750],
 	["C_Van_01_transport_F",7890],
-	["C_Hatchback_01_sport_F",2350],
+	["C_Hatchback_01_sport_F",300000],
 	["C_Van_01_fuel_F",4500],
 	["I_Heli_Transport_02_F",100000],
 	["C_Van_01_box_F",9000],
 	["I_Truck_02_transport_F",12000],
-	["I_Truck_02_covered_F",14500],
-	["B_Truck_01_transport_F",25650],
-	["B_Truck_01_box_F", 35000],
-	["O_MRAP_02_F",45000],
-	["B_Heli_Light_01_F",11000],
-	["O_Heli_Light_02_unarmed_F",15000],
+	["I_Truck_02_covered_F",16500],
+	["B_Truck_01_transport_F",45000],
+	["B_Truck_01_box_F", 56250],
+	["O_MRAP_02_F",101250],
+	["B_Heli_Light_01_F",42000],
+	["O_Heli_Light_02_unarmed_F",120000],
 	["C_Rubberboat",400],
 	["C_Boat_Civil_01_F",4500],
 	["B_Boat_Transport_01_F",450],
 	["C_Boat_Civil_01_police_F",3500],
 	["B_Boat_Armed_01_minigun_F",16500],
 	["B_SDV_01_F",25000],
-	["B_MRAP_01_F",7500]
+    ["O_Truck_03_covered_F",41250],
+    ["O_Truck_03_transport_F",33750],
+    ["O_Truck_03_device_F",102000],
+	["B_MRAP_01_F",7500],
+	["I_MRAP_03_F",85500]
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 
@@ -352,23 +356,27 @@ life_garage_sell =
 	["B_G_Offroad_01_F",3500],
 	["C_SUV_01_F",15000],
 	["C_Van_01_transport_F",25000],
-	["C_Hatchback_01_sport_F",7500],
+	["C_Hatchback_01_sport_F",1000000],
 	["C_Van_01_fuel_F",3850],
 	["I_Heli_Transport_02_F",125000],
 	["C_Van_01_box_F",35000],
 	["I_Truck_02_transport_F",49800],
 	["I_Truck_02_covered_F",62000],
-	["B_Truck_01_transport_F",135000],
-	["B_Truck_01_box_F", 150000],
-	["O_MRAP_02_F",65000],
-	["B_Heli_Light_01_F",57000],
-	["O_Heli_Light_02_unarmed_F",72500],
+	["B_Truck_01_transport_F",137500],
+	["B_Truck_01_box_F", 187500],
+	["O_MRAP_02_F",375000],
+	["B_Heli_Light_01_F",180000],
+	["O_Heli_Light_02_unarmed_F",400000],
 	["C_Rubberboat",950],
 	["C_Boat_Civil_01_F",6800],
 	["B_Boat_Transport_01_F",850],
 	["C_Boat_Civil_01_police_F",4950],
 	["B_Boat_Armed_01_minigun_F",21000],
 	["B_SDV_01_F",45000],
-	["B_MRAP_01_F",10000]
+    ["O_Truck_03_device_F",340000],
+    ["O_Truck_03_covered_F",137500],
+    ["O_Truck_03_transport_F",112500],
+	["B_MRAP_01_F",10000],
+	["I_MRAP_03_F",285000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);

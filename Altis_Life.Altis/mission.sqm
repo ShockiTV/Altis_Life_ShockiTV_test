@@ -3321,8 +3321,9 @@ class Mission
 				};
 				class Item104
 				{
-					position[]={22160.629,3.0809033,14480.969};
-					azimut=-89.569389;
+					position[]={22159.859,3.0804417,14480.024};
+					azimut=-89.569397;
+					special="NONE";
 					id=201;
 					side="WEST";
 					vehicle="B_RangeMaster_F";
@@ -10210,7 +10211,7 @@ class Mission
 		};
 		class Item98
 		{
-			position[]={22146.869,3.1667604,14481.148};
+			position[]={22137.617,3.4126806,14482.509};
 			name="jail_marker";
 			type="Empty";
 		};

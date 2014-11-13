@@ -33,7 +33,8 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport04_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
-			["images\policeHB.jpg","cop"]
+			["images\policeHB.jpg","cop"],
+			["images\civ_hatchback_sport.jpg","civ"]
 		];
 	};
 		
@@ -50,7 +51,20 @@ switch (_vehicle) do
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
 			["images\police_offroad.jpg","cop"],
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
-			["images\med_offroad.jpg","med"]
+			["images\med_offroad.jpg","med"],
+			["images\got_baratheon_offroad.jpg","civ"],
+			["images\got_night_watch_offroad.jpg","civ"],
+			["images\got_stark_offroad.jpg","civ"],
+			["images\got_lannister_offroad.jpg","civ"],
+			["images\got_targaryen_offroad.jpg","civ"],
+			["images\got_jon_snow_offroad.jpg","civ"],
+			["images\got_arryn_offroad.jpg","civ"],
+			["images\got_greyjoy_offroad.jpg","civ"],
+			["images\got_martell_offroad.jpg","civ"],
+			["images\got_tully_offroad.jpg","civ"],
+			["images\got_tyrell_offroad.jpg","civ"],
+			["images\ninja_offroad.jpg","civ"],
+			["images\ghostbusters_offroad.jpg","civ"]
 		];
 	};
 	

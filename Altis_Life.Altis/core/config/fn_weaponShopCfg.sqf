@@ -130,19 +130,19 @@ switch(_shop) do
 			{
 				["Mohammed's Jihadi Shop",
 					[
-						["arifle_TRG20_F",nil,75000],
-						["arifle_Katiba_F",nil,80000],
-						["srifle_DMR_01_F",nil,100000],
-						["arifle_SDAR_F",nil,60000],
-						["optic_ACO_grn",nil,3500],
-						["optic_Holosight",nil,3600],
+						["arifle_TRG20_F",nil,175000],
+						["arifle_Katiba_F",nil,200000],
+						["srifle_DMR_01_F",nil,250000],
+						["arifle_SDAR_F",nil,100000],
+						["optic_ACO_grn",nil,7000],
+						["optic_Holosight",nil,7200],
 						["acc_flashlight",nil,1000],
-						["optic_Hamr",nil,7500],
-						["30Rnd_9x21_Mag",nil,200],
-						["20Rnd_556x45_UW_mag",nil,125],
-						["30Rnd_556x45_Stanag",nil,300],
-						["10Rnd_762x51_Mag",nil,500],
-						["30Rnd_65x39_caseless_green",nil,275]
+						["optic_Hamr",nil,12000],
+						["30Rnd_9x21_Mag",nil,300],
+						["20Rnd_556x45_UW_mag",nil,150],
+						["30Rnd_556x45_Stanag",nil,600],
+						["10Rnd_762x51_Mag",nil,1000],
+						["30Rnd_65x39_caseless_green",nil,750]
 					]
 				];
 			};
@@ -162,13 +162,13 @@ switch(_shop) do
 						["hgun_Rook40_F",nil,6500],
 						["hgun_Pistol_heavy_02_F",nil,9850],
 						["hgun_ACPC2_F",nil,11500],
-						["hgun_PDW2000_F",nil,20000],
-						["optic_ACO_grn_smg",nil,2500],
+						["hgun_PDW2000_F",nil,25000],
+						["optic_ACO_grn_smg",nil,3000],
 						["V_Rangemaster_belt",nil,4900],
-						["16Rnd_9x21_Mag",nil,25],
-						["9Rnd_45ACP_Mag",nil,45],
-						["6Rnd_45ACP_Cylinder",nil,50],
-						["30Rnd_9x21_Mag",nil,75]
+						["16Rnd_9x21_Mag",nil,30],
+						["9Rnd_45ACP_Mag",nil,50],
+						["6Rnd_45ACP_Cylinder",nil,60],
+						["30Rnd_9x21_Mag",nil,125]
 					]
 				];
 			};
@@ -184,16 +184,16 @@ switch(_shop) do
 			{
 				["Hideout Armament",
 					[
-						["hgun_Rook40_F",nil,1500],
-						["hgun_Pistol_heavy_02_F",nil,2500],
+						["hgun_Rook40_F",nil,3000],
+						["hgun_Pistol_heavy_02_F",nil,3500],
 						["hgun_ACPC2_F",nil,4500],
-						["hgun_PDW2000_F",nil,9500],
-						["optic_ACO_grn_smg",nil,950],
+						["hgun_PDW2000_F",nil,12000],
+						["optic_ACO_grn_smg",nil,1450],
 						["V_Rangemaster_belt",nil,1900],
 						["16Rnd_9x21_Mag",nil,25],
 						["9Rnd_45ACP_Mag",nil,45],
 						["6Rnd_45ACP_Cylinder",nil,50],
-						["30Rnd_9x21_Mag",nil,75]
+						["30Rnd_9x21_Mag",nil,100]
 					]
 				];
 			};

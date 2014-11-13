@@ -69,6 +69,7 @@ player createDiarySubject ["controls","Controls"];
 		]
 	];
 					
+	
 	player createDiaryRecord ["serverrules",
 		[
 			"Za co se banuje", 
@@ -83,21 +84,10 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-				
+	
 	player createDiaryRecord ["serverrules",
 		[
-			"Pravidla pro resuscitaci", 
-				"
-				1. Oziven budes automaticky pouze pri nehode s vozidlem.<br/>
-				2. Pokud zavrazdis nejakou osobu a budes pote zastrelen, neni povinnosti osetrovatele te ozivit.<br/>
-				3. Pokud budes zastrelen pri vykradani Federalnich rezerv, nebudes oziven a jedinou volbou je Novy zivot<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord ["serverrules",
-		[
-			"Pravomoce policie a S.W.A.T.", 
+			"Pravomoce policie", 
 				"
 				Co je zde napsane, je treba dodrzovat, jinak ti hrozi kick/ban.<br/><br/>
 				
@@ -180,8 +170,7 @@ player createDiarySubject ["controls","Controls"];
 				4. Pokud je nekdo zabit v krizove palbe, nejde o RDM.<br/>
 				5. Pokud nekoho zabijes v sebeobrane nebo obrane nekoho jineho, nejde o RDM.<br/>
 				6. Strilet po komkoli bezduvodne s umyslem ho zabit.<br/><br/>
-				7. Pokud zacnes strilet prvni, muzes cekat ze po tobe zacne nekdo strilet.
-
+				
 				Vsechny tyto pripady posuzuje Admin.<br/><br/>
 				"
 		]
@@ -466,7 +455,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 				1. Pouziti smrtici sily je povoleno pouze pri ochrane zivota sveho, policisty nebo civilisty a to jen v pripade, ze omraceni by nemelo ucinek.<br/>
 				2. Vybijeni zbrane strelbou do vzduchu neni povole ani pri vycvik. Pokud policista toto pravidla porusi, bude zabanovan.<br/>
-				3. Nedodrzeni postupu a spatneho pouziti zbrane, bude znamenat zabanovani.<br/>
+				3. Nedodrzeni postupu a spatneho pouziti zbrane, bude znamenat zabanovani.<br/><br/>
 				"
 		]
 	];
@@ -519,7 +508,7 @@ player createDiarySubject ["controls","Controls"];
 				1. Ifrit<br/>
 				2. Speedboat<br/>
 				3. Policejní vozidla<br/>
-				4. Motokara (urcena pouze na zavodni drahu)<br/><br/>
+				4. Motokára (urcena pouze na zavodni drahu)<br/><br/>
 				"
 		]
 	];
